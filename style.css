@@ -17,10 +17,28 @@ html {
   font-size: 62.5%;
 }
 
+header {
+  flex:auto;
+  position: static; 
+  top: 0; 
+  width: 100%;
+  margin: 0;
+  text-align: left;
+  border-bottom: 10px ridge #457b9d;
+}
+
+header h1.page-title {
+  /*padding: 1rem 1.2rem;*/
+  font-size: 4.5rem;
+}
+
 body {
   /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
   font-family: 'STIX Two Text', serif;  ;
-
+  display: flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 2%;
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
   line-height: 1.5;
@@ -34,10 +52,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.625rem;
+  margin-bottom: 0.25rem;
   color: var(--heliotrope);
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 h1 {
@@ -69,22 +87,14 @@ p {
   margin-bottom: 1rem;
 }
 
-
-header {
-
-  position: sticky; 
-  top: 0 auto; 
-  width: 98%;
-  margin: 0 auto;
-  padding: .5rem;
-  text-align: left;
-  border-bottom: 10px ridge #457b9d;
+img {
+  flex:auto;
+  max-width:98%;
+  padding: 1px;
+  text-align: center;
 }
 
-header h1.page-title {
-  padding: 1rem 1.2rem;
-  font-size: 4.5rem;
-}
+
 
 main {
   width: 96%;
@@ -130,6 +140,11 @@ li a:hover {
 footer {
   margin: 1.5rem;
   text-align: center;
+  background-color: white;
+  border-style: ridge;
+  border-color: #1d3557;
+  border-width: 2.5px;
+  border-radius: 8px;
 }
 
 /* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
@@ -153,11 +168,9 @@ a {
   text-shadow:var(--heliotrope);
 }
 
-
-
 .featuredcontent {
   display:flexbox;
-  position:relative;
+  position:sticky;
   float:none;
   background-color: #f1faee;
   text-align: center ;
@@ -167,18 +180,19 @@ a {
   border-radius: 20px; 
   border-color:#457b9d;
   border-width: 5px;
+  margin-bottom: 2rem;
 }
 
 
 /* Set a grey background color and center the text of the "sign in" section */
 .container {
   display:flexbox;
-  position:relative;
+  position:sticky;
   float:none;
   background-color: #8ec5e7;
   text-align: center;
   color: #1d3557;
-  width: 40%;
+  width: 50%;
   border-style: ridge;
   border-radius: 20px; 
   border-color:rgba(255, 0, 0, 0.589);
