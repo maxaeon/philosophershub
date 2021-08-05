@@ -13,7 +13,6 @@
 }
 
 html {
-  /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
   font-size: 62.5%;
 }
 
@@ -28,17 +27,15 @@ header {
 }
 
 header h1.page-title {
-  /*padding: 1rem 1.2rem;*/
   font-size: 4.5rem;
 }
 
 body {
-  /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
   font-family: 'STIX Two Text', serif;  ;
   display: flex;
   /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
-  margin-top: 2%;
+  margin-top: .5%;
   /* set body font size to 1.75rem, which is 1.75x more than the font-size of 10px, making it 17.5px  */
   font-size: 1.75rem;
   line-height: 1.5;
@@ -59,7 +56,6 @@ h6 {
 }
 
 h1 {
-  /* 4rem = 40px (4 * 10px) */
   font-size: 5rem;
 }
 
@@ -98,7 +94,7 @@ img {
 
 main {
   width: 96%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   text-align: center
 }
 
@@ -132,13 +128,13 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color on hover */
 li a:hover {
   background-color: #8ec5e7;
 }
 
 footer {
-  margin: 1.5rem;
+  margin: 5rem;
   text-align: center;
   background-color: white;
   border-style: ridge;
@@ -184,7 +180,7 @@ a {
 }
 
 
-/* Set a grey background color and center the text of the "sign in" section */
+/* Set a background color and center the text of the "sign in" section */
 .container {
   display:flexbox;
   position:sticky;
@@ -269,9 +265,6 @@ a {
   header {
     width: 75%;
   }
-  
-
-
 
   .card-column {
     flex: 0 0 33.333%;
