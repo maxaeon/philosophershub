@@ -1,7 +1,6 @@
-/* color scheme sourced from http://khroma.co/generator/ */
 :root { 
   --outer-space: #d5f1f1;
-  --bright-turquoise: #e63946;
+  --bright-turquoise: #d90429;
   --gin: #d90429;
   --heliotrope: #1d3557;
 }
@@ -81,6 +80,7 @@ h6 {
 
 p {
   margin-bottom: 1rem;
+  color: #1d3557;
 }
 
 img {
@@ -127,7 +127,7 @@ img {
 /* Close button on hover */
 .close:hover,
 .close:focus {
-  color: red;
+  color: rgb(107, 1, 1);
   cursor: pointer;
 }
 
@@ -189,7 +189,7 @@ li a:hover {
 }
 
 footer {
-  margin: 5rem;
+  margin: 0;
   text-align: center;
   color: white;;
   background-color: #1d3557;
@@ -216,7 +216,7 @@ footer {
 
 /* Add a red text color to links */
 a {
-  color: rgba(255, 0, 0, 0.589);
+  color: rgb(107, 1, 1);
   text-shadow:var(--heliotrope);
 }
 
@@ -247,7 +247,7 @@ a {
   width: 50%;
   border-style: ridge;
   border-radius: 20px; 
-  border-color:rgba(255, 0, 0, 0.589);
+  border-color:rgb(107, 1, 1);
   border-width: 5px;
 
 }
@@ -257,7 +257,7 @@ a {
 }
 
 .red {
-  color: #ff002b8a
+  color: rgb(107, 1, 1);
 }
 
 /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
