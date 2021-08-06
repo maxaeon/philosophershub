@@ -26,9 +26,49 @@
 
 <main>
 
-  <section><h3>Chat</h3><br><br><h1>COMING SOON</h1></section>
+  <section><h3>Chat</h3><h1>COMING SOON</h1></section>
 
-      <footer><strong>M. A. Parks 2021 </strong><br><a href= "https://maxaeon.github.io/portfolio/"><p class="white">Other Sites by Max</p></a></footer>
+<!--Chat box stuff-->
+
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar">
+  <p>Hello. How are you today?</p>
+  <span class="time-right">10:58</span>
+</div>
+
+<div class="container darker">
+  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right">
+  <p>Hey! I'm fine, and I hope you are too :) Have you worked with Carnap.io at all yet?</p>
+  <span class="time-left">11:01</span>
+</div>
+
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar">
+  <p>Yeah, my department started using it a while ago-- wbu?</p>
+  <span class="time-right">11:02</span>
+</div>
+
+<div class="container darker">
+  <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="right">
+  <p>I'm using it for the first time in my logic class this quarter...I can't believe it took me this long to find out about it haha. Anyway, could you enroll in my carnap course page to help me troubleshoot problems? </p>
+  <span class="time-left">11:05</span>
+  </div>
+
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<!--End of chat box stuff-->
+<script src="script.js"></script>
 
     
 </body>
