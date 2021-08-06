@@ -15,60 +15,34 @@
 <body>
     <header>
       <ul>
-
-        <li><a href="about.asp">Instructors</a></li>
-        <li><a href="contact.asp">Grads</a></li>
-        <li><a href="news.asp">Undergrad</a></li>
-        <li><a href="news.asp">Public Philosophy</a></li>
-        <li><a href="default.asp">Register/Login</a></li>
-
+        <li><a href="pageinstructors.html">Instructors</a></li>
+        <li><a href="pagegrads.html">Grads</a></li>
+        <li><a href="pageundergrads.html">Undergrads</a></li>
+        <li><a href="pagefreeresources.html">Free Resources</a></li>
+        <li><a href="registerlogin.html">Register/Login</a></li>
       </ul>
       <h1><strong>Philosophers' Hub</h1></strong><h4><small>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo perspiciatis minus facilis magni blanditiis provident! Odit, totam.</small> </h4>
     </header>
 
 <main>
   <br>
-
-<section class="featuredcontent"><h3>Featured Graduate Student Content:</h3>
-  <a href="http://www.ucmapchapters.org"><h4 class="red">UC MAP Chapters</h4>
-  <img src="ucmapchapters.png"></a><br>
-
-
-<br>The MAP Chapter representatives from the University of California system have been working hard and collaborating to make the 2021-2022 year extra special with the help of a UCHRI grant.<br><small><br>Interested in having your recent project(s) featured here? <a href= mailto: "maparks@ucdavis.edu">Contact us!</a></small>
+      <section id="featuredcontent"><h3>Featured Graduate Student Content:</h3>
+      <a href="http://www.ucmapchapters.org"><h4 class="red">UC MAP Chapters</h4>
+     <img src="ucmapchapters.png"></a><br>
+     <br>The MAP Chapter representatives from the University of California system have been working hard and collaborating to make the 2021-2022 year extra special with the help of a UCHRI grant.<br><small><br>Interested in having your recent project(s) featured here? <a href= mailto: "maparks@ucdavis.edu">Contact us!</a></small>
 </section>
 
-<section class="container">
-      <form action="action_page.php">
-        
-      <small><h4>Register here:</h4><br>
-         
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" id="email" required>
-      <br>
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-      <br>
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-          <br>
-      
-          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-          <button type="submit" class="registerbtn"><strong>Register</strong></button>
-        <br>
-          <p>Already have an account? <a href="#">Sign in</a>.</p>
-        </section>
-      </form> </small>
+
     
     </section>
         <!--original sign in code;
         <section >       <h4> <a href="">Sign in</a></h4><h5> to your profile for access to course material.</h5><br><br<h6>Not yet registered? <a href="">Click here.</a></h6>
 </section> -->
 
-    <section class="row justify-center">
+    <section class="row justify-center" >
         <div class="card-column">
           <figure class="card code-card">
-            <h4 class="card-header">Undergrads</h4>
+            <h4 class="card-header" id="undergrads"><a href="pageundergrads.html">Undergrads</a></h4>
             <div class="card-body">
               <p>Access free materials for the following courses:<br><a href="#">Intro to Logic</a><br>other content coming soon<br></p>
             </div>
@@ -77,16 +51,16 @@
 
         <div class="card-column">
           <figure class="card code-card">
-            <h4 class="card-header">Grad Students</h4>
+            <h4 class="card-header" id="grads"><a href="pagegrads.html">Grad Students</a></h4>
             <div class="card-body">
-              <p><a href="#">Chat</a> with other philosophers and access <a href="#">resources</a> dedicated to getting through grad school.</p>
+              <p><a href="page">Chat</a> with other philosophers and access <a href="#">resources</a> dedicated to getting through grad school.</p>
             </div>
           </figure>
         </div>
   
         <div class="card-column">
           <figure class="card code-card">
-            <h4 class="card-header">Instructors</h4>
+            <h4 class="card-header" id="instructors"><a href="pageinstructors.html">Instructors</a></h4>
             <div class="card-body">
               <p>Share your course materials and recent projects <a href="#">here!</a></p>
             </div>
@@ -95,17 +69,21 @@
 
         <div class="card-column">
           <figure class="card code-card">
-            <h4 class="card-header">Other Content</h4>
+            <h4 class="card-header" id="other">Other Content</h4>
             <div class="card-body">
-              <p><a href="#">Proof Checker</a>
-                <br><a href= mailto: "maparks@ucdavis.edu">Contact Us</a></p>
+              <p>
+                <a href="pagechat.html">Chat</a><br>
+                <a href="pagepublicphilosopy.html">Public Philosophy</a><br>
+                <a href="pagefreeresources.html">Resources</a><br>
+                <a href="pageproofchecker.html">Proof Checker</a>
+              </p>
             </div>
           </figure>
         </div>
 
 </section>
 
-    <footer><strong>M. A. Parks 2021 </strong><br><a href= "https://maxaeon.github.io/portfolio/">Other Sites by Max</a></footer>
+    <footer><strong>M. A. Parks 2021 </strong><br><a href= "https://maxaeon.github.io/portfolio/"><p class="white">Other Sites by Max</p></a></footer>
     
 </body>
 </html>
